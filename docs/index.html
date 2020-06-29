@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- character set meta tag-->
+    <meta charset="UTF-8">
+
+    <title>acme, inc. global dashboard</title>
+    <!-- seo meta tag-->
+    <meta name="description" content="acme global dashboard to illustrate the use of google charts library set">
+    <meta name="keywords" content="Dashboard, google charts, html,css, javascript, bootstrap">
+    <meta name="author" content="acme software developer team">
+
+    <!-- responsive meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap framework -->
+    <!-- Bootstrap css library-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--Bootstrap javascript library-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!-- Google charts library set -->
+    <!-- Load ajax api-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Custom Javascript library -->
+    <script src="scripts/main.js" type="module"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!--Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-Light">
+        <a class="navbar-brand" href="#">
+<img src="img/acme-logo.jpg" width="auto" height="32px"
+     class="d-inline-block-aling-top"
+     alt="acme logo" loading="lazy">
+
+        </a>
+        <button class="navbar-toggler" type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toogle Navigation"></button>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-Link" href="#">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Platform</a>
+            </li>
+        </ul>
+        <form class="form-online my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="search"
+                   aria-label="Search">
+            <button class="btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </nav>
+<!-- titulo y subtitulo -->
+    <h1 style="padding-top: 50px">ACME GLOBAL DASHBOARD</h1>
+    <h2 style="padding-bottom: 100px">Realtime Performance Indicators.</h2>
+
+    <!-- dashboard section -->
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <!-- div that will hold pie chat --->
+                <div id="pie_div">
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Quarter Sales</h5>
+                    <p class="card-text">Last Quarter Sales</p>
+                    <a href="#" class="btn btn-primary">See details</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-8">
+            <div class="card">
+                <!-- div that will hold the axist trick chart -->
+                <div id="axis_div_tick_div"></div>
+                <div class="card-body">
+                    <h5 class="card-title">population distribution</h5>
+                    <p class="card-text">Population distribution information.
+                    Only largest cities have been considered in study.</p>
+
+                </div>
+                <a href="#" class="btn btn-primary">see details</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
